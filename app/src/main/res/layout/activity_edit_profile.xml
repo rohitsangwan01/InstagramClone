@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutUser"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Edit Profile"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/dpUpload"
+        android:layout_width="155dp"
+        android:layout_height="133dp"
+        android:layout_weight="1"
+        android:src="@drawable/btm_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayoutUser" />
+
+    <EditText
+        android:id="@+id/edtUpdtaeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Please Enter Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dpUpload" />
+
+    <EditText
+        android:id="@+id/edtUpdateBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Entre your Bio"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdtaeName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdtaeName"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdtaeName" />
+
+    <EditText
+        android:id="@+id/edtupdateprofession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Entre Your Profession"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdateBio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdateBio"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdateBio" />
+
+    <Button
+        android:id="@+id/btnUpdateiInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:onClick="btnUploadInfo"
+        android:text="Upload"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtupdateprofession"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/edtupdateprofession"
+        app:layout_constraintTop_toBottomOf="@+id/edtupdateprofession"
+        app:layout_constraintVertical_bias="0.173" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

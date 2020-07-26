@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#F9F7FB"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="left|center"
+        android:background="@drawable/top_camera" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right|center_horizontal"
+        android:background="@drawable/top_message" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/insta_textlogo" />
+
+</androidx.appcompat.widget.Toolbar>
